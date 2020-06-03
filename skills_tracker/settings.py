@@ -42,7 +42,7 @@ def find_or_create_secret_key():
 SECRET_KEY = find_or_create_secret_key()
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = 'False'
+DEBUG = False
 
 ALLOWED_HOSTS = []
 
@@ -78,7 +78,7 @@ ROOT_URLCONF = 'skills_tracker.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
