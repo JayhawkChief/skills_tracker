@@ -12,7 +12,7 @@ mccabe==0.6.1
 psycopg2==2.7.7
 pylint==2.5.2
 pytz==2020.1
-PyYAML==5.3.1
+PyYAML==5.4
 six==1.15.0
 soupsieve==2.0.1
 sqlparse==0.3.1
